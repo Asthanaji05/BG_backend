@@ -12,7 +12,8 @@ CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 @app.route('/')
 def index():
     return 'Backend Running ....'
-client = ElevenLabs(api_key=os.getenv('sk_8e4e7e1836471adcfb20544b44bd737716f1d0108970e378'))
+client = ElevenLabs(api_key=os.getenv("ELEVENLABS_API_KEY"))
+
 @app.route('/generate-audio', methods=['POST'])
 def generate_audio():
     try:
