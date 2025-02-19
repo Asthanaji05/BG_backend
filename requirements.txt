@@ -1,5 +1,6 @@
 Flask
 flask-cors
 python-dotenv
-elevenlabs
-gunicorn
+gTTS
+requests
+beautifulsoup4
