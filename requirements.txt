@@ -4,3 +4,4 @@ python-dotenv
 gTTS
 requests
 beautifulsoup4
+gunicorn
